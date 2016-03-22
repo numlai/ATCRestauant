@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText passwordEditText;
     private Button loginButton;
     private String userString, passwordString;
-
+    private MyManage myManage;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -35,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
 
         //Bind Widget
         bindWidget();
+
+        //Request Database
+        myManage = new MyManage(this);
+
         //Button controller
         buttonController();
 
